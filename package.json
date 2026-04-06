@@ -4,7 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "npx bddgen && npx playwright test"
+    "dev:test": "npx bddgen && cross-env TEST_ENV=dev npx playwright test",
+    "sit:test": "npx bddgen && cross-env TEST_ENV=sit npx playwright test",
+    "prod:test": "npx bddgen && cross-env TEST_ENV=prod npx playwright test"
   },
   "keywords": [],
   "author": "",
@@ -12,6 +14,8 @@
   "type": "commonjs",
   "devDependencies": {
     "@playwright/test": "^1.58.2",
+    "cross-env": "^10.1.0",
+    "dotenv": "^17.4.0",
     "playwright-bdd": "^8.5.0"
   }
 }
