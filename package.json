@@ -4,9 +4,9 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "dev:test": "npx bddgen && cross-env TEST_ENV=dev npx playwright test",
-    "sit:test": "npx bddgen && cross-env TEST_ENV=sit npx playwright test",
-    "prod:test": "npx bddgen && cross-env TEST_ENV=prod npx playwright test"
+    "dev:test": "cross-env npx bddgen && cross-env TEST_ENV=dev npx playwright test",
+    "sit:test": "cross-env npx bddgen && cross-env TEST_ENV=sit npx playwright test",
+    "prod:test": "cross-env npx bddgen && cross-env TEST_ENV=prod npx playwright test"
   },
   "keywords": [],
   "author": "",
